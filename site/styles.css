@@ -85,14 +85,16 @@ h1 { font-size: clamp(40px, 4.05vw, 59px); line-height: 1.18; font-weight: 800; 
 .philosophy-heading { position: relative; }
 .philosophy h2 { font-size: clamp(40px, 4.5vw, 62px); }
 .quote-mark { color: var(--lilac); font-size: 85px; line-height: .9; display: block; margin-bottom: 22px; }
+.quote-close { position: absolute; inset-inline-end: 0; bottom: 0; font-size: 64px; line-height: 1; margin: 0; }
 .philosophy .prose { color: #f0eaf5; }
 .signature { display: inline-block; margin-top: 24px; font-size: 23px; font-weight: 500; border-bottom: 1px solid var(--lilac); padding: 0 4px 3px 25px; transform: rotate(-7deg); }
-.about-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 110px; align-items: center; }
-.about h2 { margin-bottom: 28px; }
-.about-visual { width: 100%; max-width: 430px; justify-self: center; background: #eee7f4; border-radius: 18px; padding: 14px 14px 0; }
+.about-grid { max-width: 970px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); grid-template-areas: 'title portrait' 'biography portrait'; gap: 28px 80px; align-items: start; }
+.about-copy { display: contents; }
+.about h2 { grid-area: title; margin-bottom: 0; }
+.about-copy .prose { grid-area: biography; }
+.about-visual { grid-area: portrait; align-self: center; width: 100%; max-width: 300px; justify-self: center; background: #eee7f4; border-radius: 18px; padding: 10px; }
 .about-image-frame { aspect-ratio: 2 / 3; overflow: hidden; border-radius: 10px; }
 .about-image-frame img { width: 100%; height: 100%; object-fit: contain; }
-.about-visual figcaption { padding: 18px 10px 20px; color: var(--purple); text-align: center; font-size: 14px; }
 .process { background: var(--mist); }
 .process h2 { margin-bottom: 48px; }
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; padding: 0; margin: 0; list-style: none; }
@@ -154,7 +156,8 @@ details[open] summary { color: var(--purple); }
   h1 { font-size: 45px; }
   .photo-frame { height: 610px; }
   .main-nav { gap: 24px; }
-  .split-section, .about-grid, .join-grid { gap: 65px; }
+  .split-section, .join-grid { gap: 65px; }
+  .about-grid { column-gap: 50px; }
   .benefits { column-gap: 24px; }
   .benefit-featured { padding: 30px 24px; }
   .steps { gap: 26px; }
@@ -183,7 +186,8 @@ details[open] summary { color: var(--purple); }
   .hero-note { font-size: 11px; }
   .hero-note span { margin-inline: 4px; }
   .section { padding-block: 76px; }
-  .split-section, .about-grid, .faq-grid, .join-grid { gap: 40px; }
+  .split-section, .faq-grid, .join-grid { gap: 40px; }
+  .about-grid { column-gap: 36px; grid-template-columns: minmax(0, 1fr) 230px; }
   .prose { font-size: 16px; }
   .section-heading { padding-inline-start: 38px; }
   .benefits { grid-template-columns: 1fr 1fr; }
@@ -216,7 +220,7 @@ details[open] summary { color: var(--purple); }
   .photo-note { right: 14px; left: 14px; bottom: 40px; width: fit-content; padding: 13px 18px; font-size: 16px; }
   .section { padding-block: 58px; }
   h2 { font-size: 35px; }
-  .split-section, .about-grid, .faq-grid, .join-grid { grid-template-columns: 1fr; gap: 30px; }
+  .split-section, .faq-grid, .join-grid { grid-template-columns: 1fr; gap: 30px; }
   .section-heading { padding-inline-start: 0; }
   .section-glyph { position: static; display: block; margin-bottom: 18px; }
   .prose { font-size: 16px; line-height: 1.9; }
@@ -236,10 +240,12 @@ details[open] summary { color: var(--purple); }
   .benefit:last-child .benefit-icon { margin-bottom: 16px; }
   .philosophy h2 { font-size: 46px; }
   .quote-mark { font-size: 64px; margin-bottom: 14px; }
+  .quote-close { font-size: 48px; margin: 0; }
   .signature { margin-top: 20px; }
-  .about h2 { margin-bottom: 24px; }
-  .about-visual { width: 100%; max-width: 430px; justify-self: center; padding: 10px 10px 0; }
-  .about-visual figcaption { padding-block: 15px; font-size: 13px; }
+  .about-grid { grid-template-columns: minmax(0, 1fr) clamp(100px, 30vw, 128px); grid-template-areas: 'title portrait' 'biography biography'; gap: 28px 20px; align-items: center; }
+  .about h2 { font-size: clamp(28px, 8vw, 35px); }
+  .about-visual { padding: 5px; border-radius: 12px; }
+  .about-image-frame { border-radius: 8px; }
   .process h2 { margin-bottom: 32px; }
   .steps { grid-template-columns: 1fr; gap: 28px; }
   .steps li { display: grid; grid-template-columns: 44px 1fr; gap: 8px 18px; padding-top: 24px; }
