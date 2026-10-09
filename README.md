@@ -1,6 +1,6 @@
 # Reut Radaa — personal training
 
-Hebrew, right-to-left landing page for Reut Radaa's online personal training, hosted at https://reutrada.github.io/website/. Includes the coaching overview, introduction, joining process, expandable FAQ, monthly pricing, and WhatsApp, phone, and email links.
+Hebrew, right-to-left landing page for Reut Radaa's online personal training, hosted at https://reutrada.github.io/website/. Includes the coaching overview, introduction, joining process, expandable FAQ, contact section, and WhatsApp, phone, and email links.
 
 Built with static HTML, CSS, and a small navigation script. No build step or package installation is needed. Images and fonts are served from this repository.
 
@@ -17,7 +17,7 @@ Every subsequent push to `main` deploys automatically. No custom secrets or depe
 
 Edit the copy in `site/index.html`, design in `site/styles.css`, and mobile navigation in `site/script.js`. The workflow publishes only `site/`. Use relative asset URLs such as `./assets/logo.svg` so they work under the `/website/` project path.
 
-Contact buttons link to `https://wa.me/972508841460`. The price is an informational offer; no checkout or payment processing is implemented.
+Contact buttons link to `https://wa.me/972508841460`. Pricing is not displayed. No checkout or payment processing is implemented.
 
 If a framework is introduced later, add its build step and change the upload path to its generated output directory.
 

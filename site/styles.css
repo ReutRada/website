@@ -127,15 +127,13 @@ details[open] summary { color: var(--purple); }
 .join h2 { font-size: clamp(34px, 3.8vw, 52px); line-height: 1.22; color: var(--ink); }
 .button-light { background: var(--purple); color: white; margin-top: 32px; }
 .button-light:hover { background: #49325e; }
-.price-panel { border-inline-start: 1px solid #c9b5db; padding-inline-start: 52px; }
-.price-panel h3 { font-weight: 500; font-size: 19px; margin-bottom: 18px; }
-.price { display: flex; align-items: center; gap: 12px; color: var(--purple); line-height: 1; margin-bottom: 28px; }
-.price-amount { font-size: 88px; letter-spacing: -.055em; font-weight: 600; }
-.price-unit { font-size: 30px; padding-top: 9px; }
-.price-unit > span { font-size: 15px; display: block; margin-top: 10px; }
-.price-includes { font-size: 14px; line-height: 2; font-weight: 500; margin-bottom: 20px; }
-.price-includes > span { color: #a78abb; margin-inline: 3px; }
-.price-terms { font-size: 13px; color: #62536d; line-height: 1.9; max-width: 360px; }
+.contact-panel { border-inline-start: 1px solid #c9b5db; padding-inline-start: 52px; }
+.contact-panel h3 { font-weight: 600; font-size: 22px; margin-bottom: 14px; }
+.contact-intro { font-size: 16px; color: #62536d; }
+.contact-panel .button { margin-top: 22px; width: 100%; }
+.contact-includes { font-size: 14px; line-height: 2; font-weight: 500; margin-top: 24px; }
+.contact-includes > span { color: #a78abb; margin-inline: 3px; }
+.contact-terms { font-size: 13px; color: #62536d; line-height: 1.9; margin-top: 12px; }
 .site-footer { padding-block: 64px 20px; background: var(--ink); color: white; }
 .footer-main { display: grid; grid-template-columns: 1.2fr .8fr 1fr; gap: 64px; padding-bottom: 44px; }
 .footer-name { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; font-size: 36px; font-weight: 800; letter-spacing: -.04em; }
@@ -168,7 +166,7 @@ details[open] summary { color: var(--purple); }
   .identity-name { font-size: 76px; }
   .steps { gap: 26px; }
   .steps h3 { font-size: 18px; }
-  .price-panel { padding-inline-start: 36px; }
+  .contact-panel { padding-inline-start: 36px; }
 }
 @media (max-width: 900px) {
   .container { width: calc(100% - 48px); }
@@ -205,8 +203,7 @@ details[open] summary { color: var(--purple); }
   .steps { grid-template-columns: 1fr 1fr; gap: 36px; }
   .steps h3 { font-size: 21px; }
   .faq-list summary { font-size: 16px; }
-  .price-panel { padding-inline-start: 28px; }
-  .price-amount { font-size: 74px; }
+  .contact-panel { padding-inline-start: 28px; }
   .footer-main { gap: 32px; }
   .footer-name { font-size: 28px; gap: 10px; }
   .footer-name .icon { width: 28px; height: 28px; }
@@ -270,10 +267,9 @@ details[open] summary { color: var(--purple); }
   .join { padding-block: 58px; }
   .join-grid { gap: 36px; }
   .join-copy h2 { font-size: 36px; }
-  .join-copy .button { width: 100%; font-size: 15px; margin-top: 24px; }
-  .price-panel { border-inline-start: 0; border-top: 1px solid #c9b5db; padding: 30px 0 0; }
-  .price-amount { font-size: 80px; }
-  .price-includes { font-size: 13px; }
+  .contact-panel .button { font-size: 15px; }
+  .contact-panel { border-inline-start: 0; border-top: 1px solid #c9b5db; padding: 30px 0 0; }
+  .contact-includes { font-size: 13px; }
   .site-footer { padding-block: 44px 16px; }
   .footer-main { grid-template-columns: 1fr; gap: 30px; padding-bottom: 30px; }
   .footer-name { font-size: 32px; gap: 14px; }
