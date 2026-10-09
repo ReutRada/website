@@ -35,7 +35,8 @@ Open http://localhost:8000. Stop the server with Ctrl+C.
 
 ## Assets
 
-- Personal illustration of Reut, created with built-in image generation using three owner-provided photographs as identity references. The optimized website image is `site/assets/reut-illustration.jpg`; the full-resolution PNG is retained in `design/reut-illustration.png`. The original reference photographs are not included in this repository.
-- The generation prompt is preserved in `design/reut-illustration-prompt.txt`.
+- Personal illustrations created with built-in image generation from owner-provided reference photographs. The refined hero portrait is `site/assets/reut-portrait-v2.jpg`, with its PNG master and editing prompt in `design/reut-portrait-v2.png` and `design/reut-portrait-v2-prompt.txt`.
+- The matching flamingo-pose illustration appears beside the introduction. Its website image is `site/assets/reut-flamingo.jpg`, with the PNG master and prompt in `design/reut-flamingo.png` and `design/reut-flamingo-prompt.txt`. The entire pose stays visible on mobile and desktop.
+- The original illustration and prompt remain in `design/` for reference. Owner-provided reference photographs are not included in this repository.
 - Heebo typeface, locally hosted Hebrew and Latin subsets. The [SIL Open Font License](site/assets/Heebo-OFL.txt) is included alongside the fonts.
 - Brand mark and interface icons are SVG artwork included in the source.
