@@ -1,6 +1,6 @@
 # Reut Radaa — personal training
 
-Hebrew, right-to-left landing page for Reut Radaa's online personal training, hosted at https://reutrada.github.io/website/. Includes the coaching overview, introduction, joining process, expandable FAQ, contact section, and WhatsApp, phone, and email links.
+Hebrew, right-to-left landing page for Reut Radaa's online personal training, hosted at https://reutrada.github.io/website/. Includes the coaching overview, introduction, joining process, expandable FAQ, contact section, and WhatsApp and phone links.
 
 Built with static HTML, CSS, and a small navigation script. No build step or package installation is needed. Images and fonts are served from this repository.
 

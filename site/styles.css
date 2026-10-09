@@ -84,8 +84,6 @@ h1 { font-size: clamp(40px, 4.05vw, 59px); line-height: 1.18; font-weight: 800; 
 .philosophy { background: var(--purple); color: #fff; }
 .philosophy-heading { position: relative; }
 .philosophy h2 { font-size: clamp(40px, 4.5vw, 62px); }
-.quote-mark { color: var(--lilac); font-size: 85px; line-height: .9; display: block; margin-bottom: 22px; }
-.quote-close { position: absolute; inset-inline-end: 0; bottom: 0; font-size: 64px; line-height: 1; margin: 0; }
 .philosophy .prose { color: #f0eaf5; }
 .signature { display: inline-block; margin-top: 24px; font-size: 23px; font-weight: 500; border-bottom: 1px solid var(--lilac); padding: 0 4px 3px 25px; transform: rotate(-7deg); }
 .about-grid { max-width: 970px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); grid-template-areas: 'title portrait' 'biography portrait'; gap: 28px 80px; align-items: start; }
@@ -239,8 +237,6 @@ details[open] summary { color: var(--purple); }
   .benefit:last-child { display: block; grid-column: auto; padding-bottom: 0; }
   .benefit:last-child .benefit-icon { margin-bottom: 16px; }
   .philosophy h2 { font-size: 46px; }
-  .quote-mark { font-size: 64px; margin-bottom: 14px; }
-  .quote-close { font-size: 48px; margin: 0; }
   .signature { margin-top: 20px; }
   .about-grid { grid-template-columns: minmax(0, 1fr) clamp(100px, 30vw, 128px); grid-template-areas: 'title portrait' 'biography biography'; gap: 28px 20px; align-items: center; }
   .about h2 { font-size: clamp(28px, 8vw, 35px); }
