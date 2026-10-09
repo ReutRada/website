@@ -53,8 +53,8 @@ h1 { font-size: clamp(40px, 4.05vw, 59px); line-height: 1.18; font-weight: 800; 
 .button-primary:hover, .nav-cta:hover { background: #49325e; }
 .hero-note { font-size: 12px; color: var(--muted); margin-top: 16px; }
 .hero-note span { margin-inline: 8px; color: #b8adbf; }
-.hero-visual { position: relative; margin-inline-start: 6px; }
-.photo-frame { height: 620px; border-radius: 160px 160px 20px 20px; overflow: hidden; background: #eee7f4; }
+.hero-visual { position: relative; width: 88%; justify-self: center; }
+.photo-frame { height: 550px; border-radius: 160px 160px 20px 20px; overflow: hidden; background: #eee7f4; }
 .photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .photo-note { position: absolute; bottom: 58px; right: -32px; background: #fff; padding: 17px 22px; border-radius: 12px; display: flex; align-items: center; gap: 15px; box-shadow: 0 8px 40px rgba(48,38,58,.08); font-size: 18px; font-weight: 700; line-height: 1.5; }
 .photo-note-icon { display: grid; place-items: center; background: var(--mist); color: var(--purple); width: 45px; height: 45px; border-radius: 50%; }
@@ -154,7 +154,7 @@ details[open] summary { color: var(--purple); }
   .container { width: calc(100% - 72px); }
   .hero { gap: 40px; }
   h1 { font-size: 45px; }
-  .photo-frame { height: 610px; }
+  .photo-frame { height: 540px; }
   .main-nav { gap: 24px; }
   .split-section, .join-grid { gap: 65px; }
   .about-grid { column-gap: 50px; }
@@ -179,7 +179,7 @@ details[open] summary { color: var(--purple); }
   h1 { font-size: 36px; }
   .hero-intro { font-size: 13px; }
   .hero-description { font-size: 15px; }
-  .photo-frame { height: 560px; }
+  .photo-frame { height: 500px; }
   .photo-note { right: -16px; padding: 15px; font-size: 15px; gap: 10px; }
   .photo-note-icon { width: 36px; height: 36px; }
   .button { font-size: 14px; gap: 12px; padding: 16px 20px; }
@@ -214,8 +214,8 @@ details[open] summary { color: var(--purple); }
   .hero-description { font-size: 16px; line-height: 1.9; }
   .hero .button { width: 100%; margin-top: 24px; font-size: 15px; }
   .hero-note { text-align: center; font-size: 12px; margin-top: 13px; }
-  .hero-visual { width: 100%; max-width: 430px; align-self: center; margin-inline: 0; }
-  .photo-frame { height: auto; aspect-ratio: 2 / 3; max-height: 560px; border-radius: 100px 100px 14px 14px; }
+  .hero-visual { width: 88%; max-width: 380px; align-self: center; margin-inline: 0; }
+  .photo-frame { height: auto; aspect-ratio: 2 / 3; max-height: 500px; border-radius: 100px 100px 14px 14px; }
   .photo-frame img { object-position: center top; }
   .photo-note { right: 14px; left: 14px; bottom: 40px; width: fit-content; padding: 13px 18px; font-size: 16px; }
   .section { padding-block: 58px; }
