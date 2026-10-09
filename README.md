@@ -1,6 +1,8 @@
-# Website
+# Reut Radaa — personal training
 
-Static landing page hosted on GitHub Pages. The repository currently contains a temporary “Coming soon” page; the landing page will be built later.
+Hebrew, right-to-left landing page for Reut Radaa's online personal training, hosted at https://reutrada.github.io/website/. Includes the coaching overview, introduction, joining process, expandable FAQ, monthly pricing, and WhatsApp, phone, and email links.
+
+Built with static HTML, CSS, and a small navigation script. No build step or package installation is needed. Images and fonts are served from this repository.
 
 ## Enable hosting
 
@@ -11,9 +13,11 @@ Static landing page hosted on GitHub Pages. The repository currently contains a 
 
 Every subsequent push to `main` deploys automatically. No custom secrets or dependencies are required.
 
-## Build the landing page
+## Edit the landing page
 
-Replace `site/index.html` and add assets inside `site/`. The workflow publishes only this directory. Use relative asset URLs such as `./assets/logo.svg` so they work under the `/website/` project path.
+Edit the copy in `site/index.html`, design in `site/styles.css`, and mobile navigation in `site/script.js`. The workflow publishes only `site/`. Use relative asset URLs such as `./assets/logo.svg` so they work under the `/website/` project path.
+
+Contact buttons link to `https://wa.me/972508841460`. The price is an informational offer; no checkout or payment processing is implemented.
 
 If a framework is introduced later, add its build step and change the upload path to its generated output directory.
 
@@ -28,3 +32,9 @@ python3 -m http.server 8000 --directory site
 Open http://localhost:8000. Stop the server with Ctrl+C.
 
 [GitHub Pages configuration documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+## Assets
+
+- Workout atmosphere photograph by [Benjamin Klaver on Unsplash](https://unsplash.com/photos/QBsVExIgTCo). This is stock imagery, not a portrait of Reut. A visible photo credit appears below the image.
+- Heebo typeface, locally hosted Hebrew and Latin subsets. The [SIL Open Font License](site/assets/Heebo-OFL.txt) is included alongside the fonts.
+- Brand mark and interface icons are SVG artwork included in the source.
