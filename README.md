@@ -35,6 +35,7 @@ Open http://localhost:8000. Stop the server with Ctrl+C.
 
 ## Assets
 
-- Workout atmosphere photograph by [Benjamin Klaver on Unsplash](https://unsplash.com/photos/QBsVExIgTCo). This is stock imagery, not a portrait of Reut. A visible photo credit appears below the image.
+- Personal illustration of Reut, created with built-in image generation using three owner-provided photographs as identity references. The optimized website image is `site/assets/reut-illustration.jpg`; the full-resolution PNG is retained in `design/reut-illustration.png`. The original reference photographs are not included in this repository.
+- The generation prompt is preserved in `design/reut-illustration-prompt.txt`.
 - Heebo typeface, locally hosted Hebrew and Latin subsets. The [SIL Open Font License](site/assets/Heebo-OFL.txt) is included alongside the fonts.
 - Brand mark and interface icons are SVG artwork included in the source.
