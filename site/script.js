@@ -30,3 +30,16 @@ document.addEventListener('click', (event) => {
 });
 
 window.matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
+
+const demoVideo = document.querySelector('#app-demo-video');
+const demoPlayButton = document.querySelector('.app-demo-play');
+
+if (demoVideo && demoPlayButton) {
+  demoPlayButton.hidden = false;
+  demoVideo.addEventListener('play', () => { demoPlayButton.hidden = true; });
+  demoPlayButton.addEventListener('click', () => {
+    // Keep native controls available even when playback cannot start.
+    demoPlayButton.hidden = true;
+    demoVideo.play().catch(() => { demoPlayButton.hidden = false; });
+  });
+}
