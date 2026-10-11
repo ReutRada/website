@@ -250,8 +250,8 @@ details[open] summary { color: var(--purple); }
   .hero-actions { flex-direction: column; align-items: center; margin-top: 24px; }
   .hero-actions .button { margin-top: 0; }
   .hero-actions .hero-note { flex-basis: auto; width: 100%; }
-  .hero-about-link { order: 2; gap: 7px; min-height: 38px; margin-top: 24px; padding: 4px 5px 4px 10px; border-color: #e6ded5; background: #f5efe8; color: #71544b; font-size: 12px; }
-  .hero-about-link:hover { background: #eee5dc; border-color: #d7c6b8; }
+  .hero-about-link { order: 2; gap: 7px; min-height: 38px; margin-top: 24px; padding: 4px 5px 4px 10px; border-color: #ded2eb; background: #eee7f6; color: var(--purple); font-size: 12px; }
+  .hero-about-link:hover { background: #e8def1; border-color: #cdbedb; }
   .hero-about-avatar { width: 24px; height: 24px; }
   .hero-about-avatar img { width: 24px; }
   .hero-about-link .icon { width: 12px; height: 12px; }
@@ -261,6 +261,9 @@ details[open] summary { color: var(--purple); }
   .photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transform: scale(1.7); transform-origin: 50% 15%; }
   .photo-note { display: none; }
   .section { padding-block: 58px; }
+  .beginning { padding-block-start: 28px; }
+  .beginning .section-glyph { line-height: 1; margin-bottom: 10px; }
+  .beginning .section-glyph .icon { display: block; }
   h2 { font-size: 35px; }
   .split-section, .faq-grid, .join-grid { grid-template-columns: 1fr; gap: 30px; }
   .section-heading { padding-inline-start: 0; }
