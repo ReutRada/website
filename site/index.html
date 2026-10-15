@@ -488,6 +488,29 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
  .join-copy h2{font-size:28px}
  .footer-contact{column-gap:12px}
 }
+
+/* Shared learning message, compact service cards, WhatsApp-only contact. */
+.learning-quote{margin:0}
+.learning-quote-mark{display:block;color:var(--purple);font:64px/.65 Georgia,serif;height:30px;margin-bottom:8px}
+.learning-signature{display:block;margin-top:14px;color:var(--purple);font-size:16px;font-style:normal;font-weight:500}
+.benefit,.benefit:last-child{display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:10px 16px;align-content:start}
+.benefit h3,.benefit-featured h3{grid-column:1;grid-row:1;align-self:center;margin:0;max-width:none}
+.benefit .benefit-icon,.benefit-featured .benefit-icon{grid-column:2;grid-row:1;width:28px;height:28px;margin:0;justify-content:center;align-self:center;background:transparent;border-radius:0}
+.benefit .benefit-icon .icon{width:26px;height:26px}
+.benefit p{grid-column:1/-1;margin:0}
+.footer-contact .footer-whatsapp{margin-bottom:0}
+@media(max-width:760px){
+ #hero-title{font-size:clamp(24px,7.4vw,36px)}
+ .beginning .split-section{gap:18px}
+ #beginning-title{font-size:clamp(28px,7.8vw,34px)}
+ .learning-signature{margin-top:10px;font-size:15px}
+ .learning-quote-mark{font-size:54px;height:25px;margin-bottom:6px}
+ .benefit,.benefit:last-child{padding:18px;gap:10px 12px}
+ .benefit h3,.benefit-featured h3{font-size:20px;line-height:1.35;margin:0}
+ .benefit .benefit-icon,.benefit-featured .benefit-icon{margin:0}
+ .benefit p{font-size:16px;line-height:1.65}
+}
+@media(max-width:360px){.benefit h3,.benefit-featured h3{font-size:19px}}
 </style>
     <script src="./script.js" defer></script>
   </head>
@@ -518,7 +541,7 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
       <section class="hero container" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="hero-intro"><span class="small-dot" aria-hidden="true"></span>ליווי אונליין אישי לנשים ולגברים</p>
-          <h1 id="hero-title"><span class="phone-heading-line">להתחזק להבין</span> <span class="phone-heading-line">את האימון</span> <span class="phone-heading-line">ולבנות שגרה</span> <span class="phone-heading-line">שמתאימה לחיים שלך</span></h1>
+          <h1 id="hero-title"><span class="phone-heading-line">להתחזק ולהבין את האימון</span> <span class="phone-heading-line">ולבנות שגרה</span> <span class="phone-heading-line">שמתאימה לחיים שלך</span></h1>
           <div class="hero-description">
             <p>תוכנית אימונים ברורה לבית או לחדר כושר, עם הסברים וחלופות שמתאימים למטרה ולשגרה שלך.</p>
             <p>אני איתך לשאלות, למשוב ולהתאמות לאורך הדרך כדי שיהיה לך ברור מה לעשות ואיך להתקדם.</p>
@@ -535,8 +558,8 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
         <figure class="hero-visual"><div class="photo-frame"><img src="./assets/reut-portrait-white-brown-v3.png" alt="איור של רעות רדאה מחייכת, עם שיער מתולתל ארוך בגופייה לבנה וטייץ חום" width="1024" height="1536" fetchpriority="high"></div><div class="photo-note"><span class="photo-note-icon"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg></span><span>כוח. ביטחון. הרגלים.<small>בדרך שלך, בקצב שלך.</small></span></div></figure>
       </section>
       <section class="beginning section" aria-labelledby="beginning-title"><div class="container split-section">
-        <div class="section-heading"><span class="section-glyph" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg></span><h2 id="beginning-title"><span class="phone-heading-line">בהתחלה לא צריך</span> <span class="phone-heading-line">להבין הכול</span> <span class="phone-heading-line">את הלמידה נעשה</span> <span class="phone-heading-line">תוך כדי</span></h2></div>
-        <div class="prose"><p>פותחים את האפליקציה ואת התוכנית שלך, קוראים את ההנחיות ורואים איך לבצע את התרגילים. יש לך בסיס ברור לעבוד לפיו, בלי לתכנן אימון חדש בכל פעם.</p><p>עם התרגול לומדים להכיר את התנועות, לבחור עומס ולהשתמש בחלופות. כשמשהו לא ברור, אפשר לכתוב לי לפני הביצוע.</p><p>ככה נבנים הידע והביטחון להתאמן גם כשהשגרה משתנה.</p><a class="learning-demo-link" href="#app-demo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg><span>הצצה לאפליקציה</span></a></div>
+        <div class="section-heading"><blockquote class="learning-quote"><span class="learning-quote-mark" aria-hidden="true">“</span><h2 id="beginning-title"><span class="phone-heading-line">אני מאמינה</span> <span class="phone-heading-line">שידע הוא כוח</span></h2><cite class="learning-signature">רעות</cite></blockquote></div>
+        <div class="prose"><p>מתחילים עם תוכנית ברורה והכוונה ממני. פותחים את האפליקציה ואת התוכנית שלך, קוראים את ההנחיות ורואים איך לבצע את התרגילים.</p><p>את הידע והביטחון נבנה יחד, תוך כדי האימונים. עם התרגול לומדים להכיר את התנועות, לבחור עומס ולהשתמש בחלופות.</p><p>כשמשהו לא ברור, אפשר לכתוב לי בוואטסאפ לפני הביצוע. יש לך בסיס להתאמן לפיו, גם כשהשגרה משתנה.</p><a class="learning-demo-link" href="#app-demo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg><span>הצצה לאפליקציה</span></a></div>
       </div></section>
       <section id="coaching" class="coaching section" aria-labelledby="coaching-title"><div class="container">
         <div class="section-top"><h2 id="coaching-title">מה כולל הליווי?</h2><span class="section-top-note">מסגרת ברורה. קשר אישי.</span></div>
@@ -562,10 +585,6 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
             <p id="app-demo-description" class="visually-hidden">הסרטון מדגים פתיחת חלופות למכרעים לאחור, צפייה בהדגמה ובחירת ספליט סקוואט בולגרי. בהמשך מוצגות חלופות למנת עוף מתוך תפריט לדוגמה: אמנון, חזה הודו, שייטל ובקלה, עם כמות לכל חלופה וציון לאחר בישול. בוחרים חלופה אחת במקום המנה המקורית. זו המחשה מעוצבת, והאפשרויות והמראה באפליקציה עשויים להיות שונים.</p>
           </figure>
         </div></div></section>
-      <section class="philosophy section" aria-labelledby="philosophy-title"><div class="container split-section">
-        <div class="philosophy-heading"><div class="quote-frame"><span class="quote-mark quote-open" aria-hidden="true">“</span><h2 id="philosophy-title">אני מאמינה שידע הוא כוח.</h2><span class="quote-mark quote-close" aria-hidden="true">”</span></div><div class="signature">רעות</div></div>
-        <div class="prose"><p>חשוב לי שיהיה לך ברור מה עושים ולמה: איך לבצע תרגיל, לבחור חלופה ולהתקדם בעומס. את הידע הזה נבנה יחד, מתוך האימונים עצמם.</p><p>כל אימון הוא הזדמנות להבין עוד קצת, ולצאת עם ידע וביטחון שיישארו איתך גם בהמשך.</p></div>
-      </div></section>
       <section id="about" class="about section" aria-labelledby="about-title"><div class="container about-grid">
         <div class="about-copy"><h2 id="about-title">נעים להכיר, אני רעות.</h2><div class="prose"><p>אני רעות רדאה, בת 32, מאמנת כושר ומדריכת פילאטיס, והתנועה מלווה אותי מאז שהייתי ילדה. תמיד הייתה בי הרבה אנרגיה, ובריקוד ובריצה מצאתי מקום לפרוק אותה. עם השנים הבנתי כמה התנועה עוזרת לי לשחרר לחץ, לסדר את המחשבות ולהרגיש טוב יותר ביום יום.</p><p>הריצה ליוותה אותי גם בתקופות העמוסות של הלימודים, ודרך הפילאטיס למדתי להקשיב יותר לנשימה ולגוף שלי. מתוך החיבור הזה גדלה גם האהבה שלי ללמד ולהעביר הלאה את מה שלמדתי בעצמי.</p><p>לאורך השנים ליוויתי נשים בסטודיו שלי, באימונים אישיים ובקבוצות קטנות. היום אני מרחיבה את הליווי גם לגברים, עם אימוני כוח לחיזוק כל הגוף, שיפור הגמישות ודגשים לפי המטרה האישית. חשוב לי לתת לך הבנה של מה שעושים ולמה, מקום לשאול כשמשהו לא ברור, ודרך להתאמן שמתאימה לחיים שלך.</p><p>במהלך השנים קיבלתי גם פניות מנשים שעקבו אחריי ורצו להתאמן איתי אונליין. מתוך הרצון לתת מענה גם מרחוק, נולד הליווי הזה עם הניסיון והקשר האישי שאני מביאה איתי מהסטודיו.</p><p>אני מאמינה שידע הוא כוח, ואת הידע הזה נבנה יחד לאורך הדרך. בהתחלה יש לך תוכנית ברורה והכוונה ממני. עם התרגול אפשר להכיר את התנועות, להבין איך להשתמש בחלופות ולבנות ביטחון באימון. נבנה יחד כוח והרגלים שאפשר לשמור עליהם, לצד ידע שיישאר איתך הלאה.</p></div></div>
         <figure class="about-visual"><div class="about-image-frame"><img src="./assets/reut-flamingo.jpg" alt="איור של רעות רדאה מחייכת ועומדת בתנוחת פלמינגו על רגל אחת, בבגדי אימון לבנים ולילך" width="1024" height="1536" loading="lazy" decoding="async"></div></figure>
@@ -580,7 +599,7 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
         <details><summary>אפשר להצטרף גם בלי ניסיון או אחרי הפסקה?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>נבדוק יחד את הניסיון, היכולת ושאלון הבריאות שלך. לפי זה נתאים את נקודת הפתיחה ואת העומס.</p></div></details>
         <details><summary>צריך ציוד בבית?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>חלק מהאפשרויות דורשות משקולות או גומיות. נבדוק מה יש לך ומה מתאים לתוכנית לפני ההתחלה.</p></div></details>
         <details><summary>מחליפים תוכנית כל שבוע?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>נשמור על בסיס שמאפשר לך ללמוד את התרגילים ולהתקדם. נעדכן לפי הצורך, היכולת והמעקב שלך.</p></div></details>
-        <details><summary>איך אנחנו בקשר?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>דרך הודעות אישיות והמעקב באפליקציה, עם משוב שבועי ושיחה חודשית. המענה בימים א׳–ה׳, למעט חגים, בתוך יום עסקים אחד. שיחות בתיאום.</p></div></details>
+        <details><summary>איך אנחנו בקשר?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>המענה האישי בוואטסאפ, לצד המעקב באפליקציה ומשוב שבועי. שיחה חודשית בוואטסאפ בתיאום. המענה בימים א׳–ה׳, למעט חגים, בתוך יום עסקים אחד.</p></div></details>
         <details><summary>ומה לגבי התזונה?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>באפליקציה יש כלים לתיעוד ולחלופות. התאמת תפריט אישי אינה אוטומטית ונדרשת לה בקרה מקצועית. נבהיר בשיחה מה מתאים לך ומה כלול בשירות.</p></div></details>
         <details><summary>מתי רואים שינוי?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>קצב ההתקדמות אישי ותלוי בין היתר בהתמדה, בעומס, בתזונה ובהתאוששות. נעקוב אחרי ההתקדמות בלי להבטיח תוצאה או מועד אחידים.</p></div></details>
       </div></div></section>
@@ -594,7 +613,7 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
         <div class="footer-main">
           <div class="footer-identity"><a class="footer-name" href="#"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg>רעות רדאה</a><p>מאמנת כושר ומדריכת פילאטיס</p></div>
           <nav class="footer-nav" aria-label="ניווט בתחתית העמוד"><h2>בעמוד הזה</h2><a href="#coaching">הליווי שלי</a><a href="#about">נעים להכיר</a><a href="#process">איך מתחילים?</a><a href="#questions">שאלות ותשובות</a></nav>
-          <div class="footer-contact"><h2>הדרך שלך מתחילה כאן</h2><a class="footer-whatsapp" href="https://wa.me/972508841460"  rel="noopener noreferrer" target="_blank"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>לשיחה ב־WhatsApp</a><a href="tel:0508841460"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg><span dir="ltr">050-8841460</span></a></div>
+          <div class="footer-contact"><h2>הדרך שלך מתחילה כאן</h2><a class="footer-whatsapp" href="https://wa.me/972508841460"  rel="noopener noreferrer" target="_blank"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>לשיחה ב־WhatsApp</a></div>
         </div>
         <div class="footer-bottom"><span>© רעות רדאה</span><a class="back-top" href="#">חזרה למעלה<svg class="icon" aria-hidden="true"><use href="#icon-up"/></svg></a></div>
       </div>
