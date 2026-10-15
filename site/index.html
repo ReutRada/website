@@ -550,6 +550,20 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
  .process h2{margin-bottom:18px}
  .steps h3{white-space:normal;text-wrap:balance}
 }
+
+/* Clear, keyboard-accessible information at the end of the page. */
+.footer-information { border-top: 1px solid #5b4b67; padding-block: 18px; color: #eee7f4; }
+.footer-information > h2 { margin-bottom: 10px; }
+.footer-information details { border-bottom: 1px solid #5b4b67; }
+.footer-information summary { cursor: pointer; min-height: 48px; padding: 12px 4px; font-size: 14px; font-weight: 500; line-height: 1.7; }
+.footer-information details[open] summary { color: white; }
+.footer-information .information-copy { padding: 4px 4px 22px; max-width: 850px; font-size: 14px; line-height: 1.9; }
+.information-copy p + p, .information-copy ul { margin-top: 12px; }
+.information-copy ul { padding-inline-start: 22px; }
+.information-copy a { text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.information-copy h3 { font-size: 16px; margin-top: 18px; margin-bottom: 8px; }
+.information-date { font-size: 12px; color: #d5cadf; margin-bottom: 12px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
 </style>
     <script src="./script.js" defer></script>
   </head>
@@ -598,7 +612,7 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
       </section>
       <section class="beginning section" aria-labelledby="beginning-title"><div class="container split-section">
         <div class="section-heading"><blockquote class="learning-quote"><h2 id="beginning-title"><span class="phone-heading-line">״אני מאמינה</span> <span class="phone-heading-line">שידע הוא כוח״</span></h2></blockquote></div>
-        <div class="prose"><p>אני מאמינה שידע הוא כוח, כי כשמבינים מה עושים ולמה, אפשר לבנות ביטחון באימון ולקחת את הכלים האלה גם להמשך, אחרי הליווי.</p><p>בהתחלה לא צריך להבין הכול. נלמד תוך כדי האימונים, צעד אחר צעד, ואני כאן לשאלות ולהכוונה לאורך הדרך. נעבור על מה שלא ברור, נלמד איך לבצע את התרגילים ואיך לבחור חלופה כשצריך, עד שהדברים ירגישו מוכרים יותר.</p><p>חשוב לי לעזור לך להתחזק ולהרגיש יותר בנוח באימון, וגם להבין איך להתאמן בעצמך. שהידע והביטחון שנבנה יחד יישארו שלך, כדי שיהיו לך כלים להמשיך גם בלעדיי.</p><a class="learning-demo-link" href="#app-demo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg><span>הצצה לאפליקציה</span></a></div>
+        <div class="prose"><p>אני מאמינה שידע הוא כוח, כי כשמבינים מה עושים ולמה, אפשר לבנות ביטחון באימון ולקחת את הכלים האלה גם להמשך, אחרי הליווי.</p><p>בהתחלה לא צריך להבין הכול. נלמד תוך כדי האימונים, צעד אחר צעד, ואני כאן לשאלות ולהכוונה לאורך הדרך. נעבור על מה שלא ברור, נלמד איך לבצע את התרגילים ואיך לבחור חלופה כשצריך, עד שהדברים ירגישו מוכרים יותר.</p><p>חשוב לי לעזור לך להתחזק, להרגיש יותר בנוח באימון ולהבין איך להתאמן בעצמך.</p><a class="learning-demo-link" href="#app-demo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg><span>הצצה לאפליקציה</span></a></div>
       </div></section>
       <section id="process" class="process section" aria-labelledby="process-title"><div class="container"><h2 id="process-title">איך מתחילים?</h2><ol class="steps" role="list"><li><span class="step-number" aria-hidden="true">01</span><h3>שיחה והיכרות</h3><p>נדבר על המטרה שלך, הניסיון והשגרה, ונראה יחד איך הליווי יכול להתאים לך.</p></li><li><span class="step-number" aria-hidden="true">02</span><h3>תוכנית והכוונה להתחלה</h3><p>נבחר תוכנית שמתאימה לך ונעבור יחד על התרגילים, ההנחיות והאפשרויות לבית או לחדר כושר.</p></li><li><span class="step-number" aria-hidden="true">03</span><h3>אימון, מעקב והתאמות</h3><p>מתחילים להתאמן ומדווחים איך הולך. אני נותנת משוב והכוונה, ונעשה התאמות לפי ההתקדמות והשגרה שלך.</p></li></ol></div></section>
       <section id="coaching" class="coaching section" aria-labelledby="coaching-title"><div class="container">
@@ -650,11 +664,43 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
           <nav class="footer-nav" aria-label="ניווט בתחתית העמוד"><h2>בעמוד הזה</h2><a href="#process">איך מתחילים?</a><a href="#coaching">הליווי שלי</a><a href="#about">נעים להכיר</a><a href="#questions">שאלות ותשובות</a></nav>
           <div class="footer-contact"><h2>הדרך שלך מתחילה כאן</h2><a class="footer-whatsapp" href="https://wa.me/972508841460"  rel="noopener noreferrer" target="_blank"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>לשיחה בוואטסאפ</a></div>
         </div>
+
+        <section class="footer-information" aria-labelledby="information-title">
+          <h2 id="information-title">מידע ושירות</h2>
+          <details id="accessibility"><summary>הצהרת נגישות ויצירת קשר</summary><div class="information-copy">
+            <p class="information-date">עודכן ב־15.10.2026</p>
+            <p>חשוב לי לאפשר גישה למידע ולשירות גם לאנשים עם מוגבלות. באתר שולבו כותרות לפי מבנה התוכן, קישור לדילוג לתוכן המרכזי, תיאורי תמונות, סימון מיקוד בעת ניווט במקלדת ותצוגה המותאמת לרוחב המסך. אפשר לפתוח את התפריטים ואת אזור המידע באמצעות המקלדת ולהגדיל את התצוגה באמצעות הדפדפן.</p>
+            <p>לצד סרטון ההמחשה באפליקציה מופיע תיאור טקסטואלי של הפעולות המוצגות בו. שירותים חיצוניים, ובהם WhatsApp, נפתחים מחוץ לאתר ופועלים בממשק של הספק שלהם. אם יש קושי בשימוש בהם, אפשר לפנות בטלפון או בדואר אלקטרוני.</p>
+            <p>נתקלת בקושי בגלישה או שיש צורך במידע בפורמט נגיש? אפשר לפנות לרעות רדה באמצעות <a href="mailto:reutrada52@gmail.com"><bdi dir="ltr">reutrada52@gmail.com</bdi></a>, בטלפון <a href="tel:+972508841460"><bdi dir="ltr">050-8841460</bdi></a> או דרך <a href="https://wa.me/972508841460" target="_blank" rel="noopener noreferrer">פנייה בוואטסאפ</a>. כדי לעזור בבדיקה, רצוי לציין את העמוד, הקושי וסוג המכשיר או הדפדפן. נבדוק את הפנייה ונבחן פתרון מתאים או דרך חלופית לקבלת המידע.</p>
+            <p>המידע כאן מתאר את ההתאמות הקיימות ואת דרכי הפנייה. הוא אינו אישור בדיקת נגישות מלאה או הצהרה על עמידה מלאה בתקן.</p>
+          </div></details>
+          <details id="privacy"><summary>פרטיות</summary><div class="information-copy">
+            <p class="information-date">עודכן ב־15.10.2026</p>
+            <p>האתר מופעל בידי רעות רדה. לפניות בנושא מידע אישי וזכויות פרטיות אפשר לכתוב ל־<a href="mailto:reutrada52@gmail.com"><bdi dir="ltr">reutrada52@gmail.com</bdi></a> או להתקשר ל־<a href="tel:+972508841460"><bdi dir="ltr">050-8841460</bdi></a>.</p>
+            <p>האתר משמש להצגת השירות ואינו כולל טופס הרשמה או סליקה. בקוד האתר לא משולבים כלי מעקב פרסומיים או כלי ניתוח גלישה, ולא נעשה בו שימוש בעוגיות לצורכי פרסום מטעמי. שירות האחסון GitHub Pages מתעד כתובות IP לצורכי אבטחה בהתאם ל־<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">מדיניות הפרטיות של GitHub</a>.</p>
+            <p>אם בוחרים לפנות בטלפון, בדואר אלקטרוני או בוואטסאפ, יימסרו פרטי הקשר ותוכן הפנייה שבחרת לשלוח. המידע משמש למענה, לבירור התאמה, לתיאום ולטיפול בפניות שירות, פרטיות וביטולים. מסירת פרטים לצורך פנייה ראשונית היא לבחירתך ואינה חובה חוקית. ללא פרטים שמאפשרים לחזור אליך, ייתכן שלא נוכל להשיב או לתאם שירות.</p>
+            <p>פנייה בוואטסאפ מועברת ל־WhatsApp/Meta ופנייה במייל מעובדת בשירות Gmail של Google. ספקי התקשורת והאחסון מעבדים מידע לצורך הפעלת השירותים שלהם, והעיבוד עשוי להיעשות גם מחוץ לישראל, בהתאם למדיניותם ולהוראות הדין. מידע עשוי להימסר גם כשקיימת חובה חוקית למסור אותו.</p>
+            <p>מומלץ שלא לשלוח בפנייה הראשונית מסמכים רפואיים, צילום תעודת זהות או פרטי כרטיס אשראי. שימוש בטפסי בריאות, במערכות הליווי ובשירותי תשלום במסגרת ההצטרפות מצריך מידע מתאים על מטרות האיסוף, מקבלי המידע ותנאי השימוש באותו שלב. הודעה זו מתייחסת לאתר ולפניות הראשוניות ואינה מחליפה אותו.</p>
+            <p>מידע מפניות יישמר ככל שנחוץ לטיפול בפנייה, לניהול הקשר ולמילוי חובות לפי דין. אפשר לפנות לבקשת עיון במידע אישי ולבקשת תיקון מידע שאינו נכון, שלם, ברור או מעודכן, בהתאם לחוק הגנת הפרטיות. בקשות למחיקה או להפסקת קשר ייבחנו בהתאם לדין ולחובות השמירה החלות.</p>
+            <p>פנייה לקבלת מידע על הליווי אינה הסכמה לקבלת פרסומות. משלוח דברי פרסומת, ככל שייעשה, יהיה בכפוף להסכמה הנדרשת בדין ולאפשרות לבקש הסרה.</p>
+          </div></details>
+          <details id="service-information"><summary>מידע על השירות ופרטי קשר</summary><div class="information-copy">
+            <p>מפעילת האתר היא רעות רדה, עוסקת פטורה, מפוריה כפר עבודה. הליווי המתואר ניתן אונליין. מפגש אישי הוא שירות נפרד בתיאום ובתשלום נוסף, בהתאם למיקום ולהסכמה מראש.</p>
+            <p>האתר מציג מידע על השירות ואינו משלים הרשמה או רכישה. לפני ההצטרפות נציג את פרטי ההצעה המלאים לעיון, ובהם פרטי העוסק, המחיר הכולל, תקופת הליווי, אופן התשלום, מועד ההתחלה, היקף השירות ותנאי הביטול, בהתאם להוראות הדין.</p>
+            <p>המידע והכלים בנושא אימון ותזונה אינם תחליף לאבחון, טיפול רפואי או טיפול תזונתי אישי של בעל מקצוע מוסמך. התאמת האימון נעשית בהתאם למידע הרלוונטי שיימסר ולמסגרת השירות. אין הבטחה לתוצאה מסוימת או לקצב התקדמות אחיד.</p>
+            <p>לפניות שירות אפשר לפנות באמצעות <a href="mailto:reutrada52@gmail.com"><bdi dir="ltr">reutrada52@gmail.com</bdi></a>, בטלפון <a href="tel:+972508841460"><bdi dir="ltr">050-8841460</bdi></a> או דרך <a href="https://wa.me/972508841460" target="_blank" rel="noopener noreferrer">פנייה בוואטסאפ</a>.</p>
+          </div></details>
+          <details id="cancellation"><summary>ביטול עסקה</summary><div class="information-copy">
+            <p>להודעת ביטול או לבקשה להפסקת הליווי אפשר לכתוב ל־<a href="mailto:reutrada52@gmail.com"><bdi dir="ltr">reutrada52@gmail.com</bdi></a>, להתקשר ל־<a href="tel:+972508841460"><bdi dir="ltr">050-8841460</bdi></a> או לשלוח הודעה באמצעות <a href="https://wa.me/972508841460" target="_blank" rel="noopener noreferrer">פנייה בוואטסאפ</a>. רצוי לציין שם מלא ופרטים שמאפשרים לזהות את ההתקשרות. אין צורך לשלוח פרטי כרטיס אשראי. דרכי פנייה אלו מצטרפות לכל דרך ביטול העומדת לך לפי הדין.</p>
+            <p>זכויות הביטול, המועדים, ההחזרים ודמי הביטול, ככל שמותר לגבותם, נקבעים לפי הוראות הדין החלות על העסקה ועל סוג השירות ולפי תנאי ההתקשרות שנמסרו לפני ההצטרפות. הוראות האתר אינן גורעות מזכות צרכנית או מאחריות שלא ניתן להתנות עליהן לפי דין.</p>
+          </div></details>
+        </section>
         <div class="footer-bottom"><span>© רעות רדאה</span><a class="back-top" href="#">חזרה למעלה<svg class="icon" aria-hidden="true"><use href="#icon-up"/></svg></a></div>
       </div>
     </footer>
   </body>
 </html>
+
 
 
 
