@@ -436,6 +436,58 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
  .hero-description p:first-child{font-size:17px}
  .beginning .prose p{line-height:1.8;text-wrap:pretty}
  }
+
+/* Final visual polish: clear step separators and a more compact page ending. */
+.hero-about-avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 21%;transform:scale(2.05);transform-origin:50% 21%}
+.process.section,.faq.section{padding-block:64px}
+.process h2{margin-bottom:30px}
+.join.section{padding-block:52px}
+.join-grid{gap:64px}
+.site-footer{padding-block:38px 16px}
+.footer-main{gap:40px;padding-bottom:26px}
+@media(max-width:760px){
+ #process.section,#questions.section{padding-block:32px}
+ .process h2{margin-bottom:20px}
+ .steps{gap:0}
+ .steps li{grid-template-columns:30px minmax(0,1fr);gap:7px 12px;border-top:0;padding-block:14px}
+ .steps li+li{border-top:1px solid #d0c0dc}
+ .steps li:first-child{padding-top:0}
+ .steps li:last-child{padding-bottom:0}
+ .steps .step-number{grid-row:1;align-self:start;font-size:24px;line-height:1.4;margin:0;text-align:start}
+ .steps h3{font-size:19px;line-height:1.4;margin:0;align-self:center;white-space:normal}
+ .steps p{grid-column:1/-1;font-size:16px;line-height:1.65;margin:0;text-wrap:pretty}
+ .faq-grid{gap:16px}
+ .faq-heading h2{margin-bottom:10px}
+ .faq-heading p{margin-bottom:0}
+ .faq-list summary{padding-block:13px;min-height:48px;gap:14px}
+ .faq-answer{padding-bottom:16px;line-height:1.7}
+ #join.section{padding-block:30px}
+ .join-grid{gap:16px}
+ .join-copy h2{font-size:30px;line-height:1.25;max-width:14em}
+ .contact-panel{padding:16px 0 0}
+ .contact-panel h3{font-size:20px;margin-bottom:8px}
+ .contact-intro{line-height:1.65}
+ .contact-panel .button{margin-top:14px;min-height:48px;padding-block:12px}
+ .contact-includes{margin-top:12px;line-height:1.7}
+ .contact-terms{margin-top:8px;line-height:1.6}
+ .site-footer{padding-block:26px 10px}
+ .footer-main{gap:18px;padding-bottom:16px}
+ .footer-name{font-size:28px;gap:12px}
+ .footer-identity p{margin-top:0}
+ .site-footer h2{margin-bottom:0}
+ .footer-contact{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 16px}
+ .footer-contact h2{width:100%}
+ .footer-contact .footer-whatsapp{min-height:44px;padding:10px 12px;margin-bottom:0;flex:0 1 auto}
+ .footer-contact a{gap:8px}
+ .footer-nav{column-gap:20px;row-gap:0}
+ .footer-nav h2{margin-bottom:2px}
+ .footer-bottom{padding-top:8px;gap:8px}
+}
+@media(max-width:360px){
+ .steps h3{font-size:18px}
+ .join-copy h2{font-size:28px}
+ .footer-contact{column-gap:12px}
+}
 </style>
     <script src="./script.js" defer></script>
   </head>
@@ -466,7 +518,7 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
       <section class="hero container" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="hero-intro"><span class="small-dot" aria-hidden="true"></span>ליווי אונליין אישי לנשים ולגברים</p>
-          <h1 id="hero-title"><span class="phone-heading-line">להתחזק. להבין</span> <span class="phone-heading-line">את האימון.</span> <span class="phone-heading-line">ולבנות שגרה</span> <span class="phone-heading-line">שמתאימה לחיים שלך.</span></h1>
+          <h1 id="hero-title"><span class="phone-heading-line">להתחזק להבין</span> <span class="phone-heading-line">את האימון</span> <span class="phone-heading-line">ולבנות שגרה</span> <span class="phone-heading-line">שמתאימה לחיים שלך</span></h1>
           <div class="hero-description">
             <p>תוכנית אימונים ברורה לבית או לחדר כושר, עם הסברים וחלופות שמתאימים למטרה ולשגרה שלך.</p>
             <p>אני איתך לשאלות, למשוב ולהתאמות לאורך הדרך כדי שיהיה לך ברור מה לעשות ואיך להתקדם.</p>
@@ -483,7 +535,7 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
         <figure class="hero-visual"><div class="photo-frame"><img src="./assets/reut-portrait-white-brown-v3.png" alt="איור של רעות רדאה מחייכת, עם שיער מתולתל ארוך בגופייה לבנה וטייץ חום" width="1024" height="1536" fetchpriority="high"></div><div class="photo-note"><span class="photo-note-icon"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg></span><span>כוח. ביטחון. הרגלים.<small>בדרך שלך, בקצב שלך.</small></span></div></figure>
       </section>
       <section class="beginning section" aria-labelledby="beginning-title"><div class="container split-section">
-        <div class="section-heading"><span class="section-glyph" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg></span><h2 id="beginning-title"><span class="phone-heading-line">בהתחלה לא צריך</span> <span class="phone-heading-line">להבין הכול.</span> <span class="phone-heading-line">את הלמידה נעשה</span> <span class="phone-heading-line">תוך כדי.</span></h2></div>
+        <div class="section-heading"><span class="section-glyph" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg></span><h2 id="beginning-title"><span class="phone-heading-line">בהתחלה לא צריך</span> <span class="phone-heading-line">להבין הכול</span> <span class="phone-heading-line">את הלמידה נעשה</span> <span class="phone-heading-line">תוך כדי</span></h2></div>
         <div class="prose"><p>פותחים את האפליקציה ואת התוכנית שלך, קוראים את ההנחיות ורואים איך לבצע את התרגילים. יש לך בסיס ברור לעבוד לפיו, בלי לתכנן אימון חדש בכל פעם.</p><p>עם התרגול לומדים להכיר את התנועות, לבחור עומס ולהשתמש בחלופות. כשמשהו לא ברור, אפשר לכתוב לי לפני הביצוע.</p><p>ככה נבנים הידע והביטחון להתאמן גם כשהשגרה משתנה.</p><a class="learning-demo-link" href="#app-demo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg><span>הצצה לאפליקציה</span></a></div>
       </div></section>
       <section id="coaching" class="coaching section" aria-labelledby="coaching-title"><div class="container">
@@ -519,10 +571,10 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
         <figure class="about-visual"><div class="about-image-frame"><img src="./assets/reut-flamingo.jpg" alt="איור של רעות רדאה מחייכת ועומדת בתנוחת פלמינגו על רגל אחת, בבגדי אימון לבנים ולילך" width="1024" height="1536" loading="lazy" decoding="async"></div></figure>
       </div></section>
       <section id="process" class="process section" aria-labelledby="process-title"><div class="container"><h2 id="process-title">איך מתחילים?</h2><ol class="steps" role="list">
-        <li><span class="step-number" aria-hidden="true">01</span><h3>שיחה ובדיקת התאמה</h3><p>נדבר על המטרה, הניסיון והשגרה שלך. אני אסביר מה כולל הליווי ואיך נעבוד יחד.</p></li>
-        <li><span class="step-number" aria-hidden="true">02</span><h3>הצטרפות ומילוי הטפסים</h3><p>טפסי ההיכרות והבריאות עוזרים לי להבין את נקודת ההתחלה שלך. תנאי השירות מוצגים לאישור.</p></li>
-        <li><span class="step-number" aria-hidden="true">03</span><h3>תוכנית והכוונה להתחלה</h3><p>נבחר את המסלול והחלופות שמתאימים לך, ונעבור יחד על התוכנית ועל השימוש באפליקציה.</p></li>
-        <li><span class="step-number" aria-hidden="true">04</span><h3>אימון, מעקב ולמידה</h3><p>נעקוב אחר ההתקדמות ונעשה התאמות כשצריך. לא כל שבוע נראה אותו דבר, וגם זה חלק מהתהליך.</p></li>
+        <li><span class="step-number" aria-hidden="true">01</span><h3>שיחה ובדיקת התאמה</h3><p>נדבר על המטרה, הניסיון והשגרה שלך. אני אסביר מה כולל הליווי ואיך נעבוד יחד.</p></li>
+        <li><span class="step-number" aria-hidden="true">02</span><h3>הצטרפות ומילוי הטפסים</h3><p>טפסי ההיכרות והבריאות עוזרים לי להבין את נקודת ההתחלה שלך. תנאי השירות מוצגים לאישור.</p></li>
+        <li><span class="step-number" aria-hidden="true">03</span><h3>תוכנית והכוונה להתחלה</h3><p>נבחר את המסלול והחלופות שמתאימים לך, ונעבור יחד על התוכנית ועל השימוש באפליקציה.</p></li>
+        <li><span class="step-number" aria-hidden="true">04</span><h3>אימון, מעקב ולמידה</h3><p>נעקוב אחר ההתקדמות ונעשה התאמות כשצריך. לא כל שבוע נראה אותו דבר, וגם זה חלק מהתהליך.</p></li>
       </ol></div></section>
       <section id="questions" class="faq section" aria-labelledby="faq-title"><div class="container faq-grid"><div class="faq-heading"><h2 id="faq-title">שאלות לפני שמתחילים</h2><p>יש לך שאלה נוספת?</p><a class="text-link" href="https://wa.me/972508841460"  rel="noopener noreferrer" target="_blank">אפשר לכתוב לי ב־WhatsApp<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div><div class="faq-list"><details><summary>הליווי מתאים גם לגברים?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>כן. הליווי פתוח לנשים ולגברים, עם תוכנית שנבחרת לפי המטרה, הניסיון, הציוד והשגרה. לכל אדם מותאמים גם הדגשים והקצב לאורך הדרך.</p></div></details>
         <details><summary>אפשר להצטרף גם בלי ניסיון או אחרי הפסקה?<span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer"><p>נבדוק יחד את הניסיון, היכולת ושאלון הבריאות שלך. לפי זה נתאים את נקודת הפתיחה ואת העומס.</p></div></details>
