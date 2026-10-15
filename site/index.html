@@ -511,6 +511,35 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
  .benefit p{font-size:16px;line-height:1.65}
 }
 @media(max-width:360px){.benefit h3,.benefit-featured h3{font-size:19px}}
+
+/* Support stays personal; the in-person session is a separate optional service. */
+.personal-visit{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;margin-top:20px;padding:22px 24px;border:1px solid #ddd1e8;border-radius:14px;background:var(--mist)}
+.personal-visit .visit-label{font-size:13px;font-weight:500;color:var(--purple);margin-bottom:5px}
+.personal-visit h3{font-size:23px;line-height:1.35;margin-bottom:9px}
+.personal-visit p{font-size:16px;line-height:1.7;color:var(--muted)}
+.personal-visit .visit-note{font-size:14px;line-height:1.65;margin-top:10px;color:var(--purple)}
+.visit-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--purple);font-size:14px;font-weight:500;white-space:nowrap;text-underline-offset:4px}
+.visit-link:hover{text-decoration:underline}
+.visit-link .icon{width:16px;height:16px}
+@media(max-width:760px){
+ .personal-visit{grid-template-columns:minmax(0,1fr);gap:5px;padding:18px;margin-top:14px}
+ .personal-visit h3{font-size:21px}
+ .personal-visit p{line-height:1.65}
+ .personal-visit .visit-note{font-size:14px;margin-top:9px}
+ .visit-link{justify-self:start}
+ /* A clear sequence: identity, one contact button, then four navigation links. */
+ .site-footer{padding-block:24px 10px}
+ .footer-main{grid-template-columns:minmax(0,1fr);grid-template-areas:"identity" "contact" "navigation";gap:14px;padding-bottom:12px}
+ .footer-identity{grid-area:identity;text-align:center}
+ .footer-name{justify-content:center;font-size:27px;gap:10px}
+ .footer-identity p{margin-top:0;font-size:13px}
+ .footer-contact{grid-area:contact;display:block}
+ .footer-contact h2,.footer-nav h2{display:none}
+ .footer-contact .footer-whatsapp{display:flex;width:100%;min-height:48px;justify-content:center;padding:12px 16px;margin:0}
+ .footer-nav{grid-area:navigation;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px;border-top:1px solid #5b4b67;padding-top:8px}
+ .footer-nav a{justify-content:center;min-height:44px;padding:5px 4px;text-align:center;font-size:14px}
+ .footer-bottom{padding-top:8px;gap:8px;flex-wrap:wrap}
+}
 </style>
     <script src="./script.js" defer></script>
   </head>
@@ -558,12 +587,13 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
         <figure class="hero-visual"><div class="photo-frame"><img src="./assets/reut-portrait-white-brown-v3.png" alt="איור של רעות רדאה מחייכת, עם שיער מתולתל ארוך בגופייה לבנה וטייץ חום" width="1024" height="1536" fetchpriority="high"></div><div class="photo-note"><span class="photo-note-icon"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg></span><span>כוח. ביטחון. הרגלים.<small>בדרך שלך, בקצב שלך.</small></span></div></figure>
       </section>
       <section class="beginning section" aria-labelledby="beginning-title"><div class="container split-section">
-        <div class="section-heading"><blockquote class="learning-quote"><span class="learning-quote-mark" aria-hidden="true">“</span><h2 id="beginning-title"><span class="phone-heading-line">אני מאמינה</span> <span class="phone-heading-line">שידע הוא כוח</span></h2><cite class="learning-signature">רעות</cite></blockquote></div>
-        <div class="prose"><p>מתחילים עם תוכנית ברורה והכוונה ממני. פותחים את האפליקציה ואת התוכנית שלך, קוראים את ההנחיות ורואים איך לבצע את התרגילים.</p><p>את הידע והביטחון נבנה יחד, תוך כדי האימונים. עם התרגול לומדים להכיר את התנועות, לבחור עומס ולהשתמש בחלופות.</p><p>כשמשהו לא ברור, אפשר לכתוב לי בוואטסאפ לפני הביצוע. יש לך בסיס להתאמן לפיו, גם כשהשגרה משתנה.</p><a class="learning-demo-link" href="#app-demo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg><span>הצצה לאפליקציה</span></a></div>
+        <div class="section-heading"><blockquote class="learning-quote"><h2 id="beginning-title"><span class="phone-heading-line">״אני מאמינה</span> <span class="phone-heading-line">שידע הוא כוח״</span></h2></blockquote></div>
+        <div class="prose"><p>אני איתך מההתחלה: נבחר יחד את התוכנית שלך, נעבור על ההנחיות ועל השימוש באפליקציה, ונעשה סדר במה שמתאים לך.</p><p>באפליקציה מחכים לך התרגילים, ההסברים והחלופות. אני כאן לשאלות ולמשוב, ובמעקב השבועי נבדוק איך הולך ונעשה התאמות כשצריך.</p><p>את הידע והביטחון נבנה יחד, מתוך האימונים עצמם, צעד אחר צעד.</p><a class="learning-demo-link" href="#app-demo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg><span>הצצה לאפליקציה</span></a></div>
       </div></section>
       <section id="coaching" class="coaching section" aria-labelledby="coaching-title"><div class="container">
         <div class="section-top"><h2 id="coaching-title">מה כולל הליווי?</h2><span class="section-top-note">מסגרת ברורה. קשר אישי.</span></div>
         <div class="benefits"><article class="benefit benefit-featured"><span class="benefit-icon"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg></span><h3>תוכנית עם כיוון ברור</h3><p>אימוני כוח לכל הגוף וגמישות, פעמיים, שלוש או ארבע פעמים בשבוע. נבחר את התרגילים והדגשים לפי המטרה, הניסיון והציוד שלך.</p></article><article class="benefit"><span class="benefit-icon"><svg class="icon" aria-hidden="true"><use href="#icon-video"/></svg></span><h3>הסברים וחלופות</h3><p>הנחיות, הדגמות מהמאגר ואפשרויות לבית ולחדר כושר. כדי להבין מה לעשות ולמצוא חלופה מתאימה כשהציוד או היום משתנים.</p></article><article class="benefit"><span class="benefit-icon"><svg class="icon" aria-hidden="true"><use href="#icon-track"/></svg></span><h3>משוב אישי והכוונה</h3><p>מעקב שבועי ומשוב ממני, לצד שיחה חודשית לדייק את ההמשך. יש מקום לשאלות ולהתאמות כשצריך.</p></article><article class="benefit"><span class="benefit-icon"><svg class="icon" aria-hidden="true"><use href="#icon-food"/></svg></span><h3>כלים לתזונה ביום־יום</h3><p>מדריכי ארוחות ומאגר חלבונים, לצד כלי תיעוד באפליקציה. נעשה סדר בהעדפות ובשגרה שלך, בהתאם למסגרת הליווי.</p></article></div>
+        <aside class="personal-visit" aria-labelledby="visit-title"><div><p class="visit-label">אפשר גם להיפגש</p><h3 id="visit-title">אימון אישי, יחד איתי</h3><p>מפגש אישי של שעה וחצי, במקום שבו מתאמנים, בבית או בחדר הכושר. נעבור יחד על האימון שלך, נתרגל את התרגילים ונדייק טכניקה ועומס בהתאם לציוד וליכולת שלך.</p><p class="visit-note">בתיאום מראש ובתשלום נפרד מהליווי · ההגעה והמחיר לפי המיקום</p></div><a class="visit-link" href="https://wa.me/972508841460?text=%D7%94%D7%99%D7%99%20%D7%A8%D7%A2%D7%95%D7%AA%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%9E%D7%A4%D7%92%D7%A9%20%D7%90%D7%99%D7%9E%D7%95%D7%9F%20%D7%90%D7%99%D7%A9%D7%99%20%D7%90%D7%99%D7%AA%D7%9A" target="_blank" rel="noopener noreferrer">לפרטים ותיאום<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></aside>
         <div class="training-routes" aria-labelledby="routes-title"><h3 id="routes-title">גוף חזק, בקצב שלך</h3><p class="route-note">נבחר יחד לפי הניסיון, הזמן וההתאוששות שלך.</p></div>
 
       <div id="app-demo" class="app-demo" aria-labelledby="app-demo-title">
@@ -613,7 +643,7 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
         <div class="footer-main">
           <div class="footer-identity"><a class="footer-name" href="#"><svg class="icon" aria-hidden="true"><use href="#icon-weight"/></svg>רעות רדאה</a><p>מאמנת כושר ומדריכת פילאטיס</p></div>
           <nav class="footer-nav" aria-label="ניווט בתחתית העמוד"><h2>בעמוד הזה</h2><a href="#coaching">הליווי שלי</a><a href="#about">נעים להכיר</a><a href="#process">איך מתחילים?</a><a href="#questions">שאלות ותשובות</a></nav>
-          <div class="footer-contact"><h2>הדרך שלך מתחילה כאן</h2><a class="footer-whatsapp" href="https://wa.me/972508841460"  rel="noopener noreferrer" target="_blank"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>לשיחה ב־WhatsApp</a></div>
+          <div class="footer-contact"><h2>הדרך שלך מתחילה כאן</h2><a class="footer-whatsapp" href="https://wa.me/972508841460"  rel="noopener noreferrer" target="_blank"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>לשיחה בוואטסאפ</a></div>
         </div>
         <div class="footer-bottom"><span>© רעות רדאה</span><a class="back-top" href="#">חזרה למעלה<svg class="icon" aria-hidden="true"><use href="#icon-up"/></svg></a></div>
       </div>
