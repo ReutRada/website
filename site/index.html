@@ -843,7 +843,7 @@ if(location.hash==='#studio'){studioPanel.open=true;}syncStudioState();
 </script><script>
 document.querySelectorAll('[data-open-studio]').forEach(link=>link.addEventListener('click',()=>{document.getElementById('studio').open=true;}));
 function openInformation(id,moveFocus){const allowed=['accessibility','privacy','service-information','cancellation'];if(!allowed.includes(id))return;const panel=document.getElementById(id);panel.open=true;if(moveFocus){panel.querySelector('summary').focus({preventScroll:true});panel.scrollIntoView({block:'start',behavior:'auto'});}}
-document.querySelectorAll('[data-information-link]').forEach(link=>link.addEventListener('click',()=>openInformation(link.hash.slice(1),true)));
+document.querySelectorAll('[data-information-link]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();try{history.pushState(null,'',link.hash);}catch(_){}openInformation(link.hash.slice(1),true);}));
 window.addEventListener('hashchange',()=>openInformation(location.hash.slice(1),false));openInformation(location.hash.slice(1),false);
 </script></body>
 </html>
