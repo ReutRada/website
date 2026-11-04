@@ -758,7 +758,35 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
 @container coaching-contact (max-width:360px){.contact-includes{font-size:12px;gap:2px;justify-content:space-between}}
 @container coaching-contact (max-width:290px){.contact-includes{font-size:11px;gap:1.5px}}
 @container coaching-contact (max-width:250px){.contact-includes{flex-wrap:wrap;font-size:12px;justify-content:flex-start;gap:4px}}
-</style></head>
+</style><style id="approved-training-directions">
+#training-directions{max-width:690px;margin-inline:auto;container:training-directions/inline-size;scroll-margin-top:110px}
+#training-directions .program-heading{max-width:none}
+#training-directions h3{font-size:26px;font-weight:700;line-height:1.3;margin:0 0 10px;letter-spacing:-.025em}
+#training-directions .route-note{font-size:17px;font-weight:400;line-height:1.7;margin:0 0 22px;text-wrap:pretty}
+#training-directions .program-grid{grid-template-columns:minmax(0,1fr);gap:9px}
+#training-directions .program-card{border-radius:10px;background:#eee6f5;border:1px solid #d8cbe5;overflow:visible}
+#training-directions .program-card[open]{background:#eee6f5;border-color:#d8cbe5}
+#training-directions .program-card>summary{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;min-height:65px;padding:13px 16px;border-radius:10px;color:var(--purple)}
+#training-directions .program-card>summary:hover{background:#e9dff2}
+#training-directions .program-name{font-size:18px;font-weight:600;line-height:1.4;padding:0;color:var(--purple)}
+#training-directions .program-tag{font-size:12px;line-height:1.5;font-weight:400;margin:0;color:var(--purple)}
+#training-directions .program-plus{font-size:23px;line-height:1;font-weight:400}
+#training-directions .program-detail{padding:0 16px 14px;font-size:15px;line-height:1.75}
+#training-directions .program-detail p{margin:0;text-wrap:pretty}
+#training-directions .program-detail p+p{margin-top:6px}
+#training-directions .program-detail a{display:inline-flex;align-items:center;gap:12px;min-height:44px;font-size:14px;font-weight:500;line-height:1.5;margin-top:8px;border:0;text-decoration:underline;text-underline-offset:4px}
+#training-directions .program-help{font-size:14px;line-height:1.7;margin:16px 0 0;text-wrap:pretty}
+@container training-directions (max-width:430px){
+  #training-directions h3{font-size:24px}
+  #training-directions .route-note{font-size:16px;margin-bottom:18px}
+  #training-directions .program-card>summary{grid-template-columns:minmax(0,1fr) auto;gap:4px 8px;padding:11px 13px}
+  #training-directions .program-tag{grid-column:1;grid-row:2}
+  #training-directions .program-plus{grid-column:2;grid-row:1/3}
+  #training-directions .program-name{font-size:17px}
+}
+@media(forced-colors:active){#training-directions .program-card,#training-directions .program-card[open]{border-color:CanvasText}}
+</style>
+</head>
 <body>
     <a class="skip-link" href="#main">דילוג לתוכן</a>
     <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -821,7 +849,39 @@ p,summary,figcaption,li{word-break:normal;overflow-wrap:normal;hyphens:none;text
             <figcaption id="app-demo-caption">המחשה של כלי האפליקציה · 26 שניות</figcaption>
             <details class="video-transcript"><summary>תיאור הסרטון בטקסט</summary><p id="app-demo-description">הסרטון מדגים פתיחת חלופות למכרעים לאחור, צפייה בהדגמה ובחירת ספליט סקוואט בולגרי. בהמשך מוצגות חלופות למנת עוף מתוך תפריט לדוגמה, אמנון, חזה הודו, שייטל ובקלה, עם כמות לכל חלופה וציון לאחר בישול. בוחרים חלופה אחת במקום המנה המקורית. זו המחשה מעוצבת, והאפשרויות והמראה באפליקציה עשויים להיות שונים.</p></details>
           </figure>
-        </div><section class="training-routes program-preview" id="training-directions" aria-labelledby="routes-title"><div class="program-heading"><h3 id="routes-title">במה נרצה להתמקד?</h3><p class="route-note">את הדגשים, התוכנית והתדירות נבחר יחד, לפי המטרות שלכם.</p></div><div class="program-grid"><details class="program-card"><summary><span class="program-tag">2 או 3 אימונים בשבוע</span><span class="program-name">דגש ישבן</span><span class="program-desc">חיזוק ופיתוח הישבן כחלק מתוכנית כוח.</span><span class="program-more">עוד על הכיוון <span class="program-plus" aria-hidden="true">+</span></span></summary><div class="program-detail"><p>ניתן לתת לישבן יותר מקום בתוכנית, תוך חיזוק הגוף כולו והתקדמות בעומס.</p><a href="#join">נבדוק יחד מה מתאים לי <span aria-hidden="true">←</span></a></div></details><details class="program-card"><summary><span class="program-tag">2 או 3 אימונים בשבוע</span><span class="program-name">כוח לכל הגוף</span><span class="program-desc">אימוני גוף מלא לבניית כוח ושגרה.</span><span class="program-more">עוד על הכיוון <span class="program-plus" aria-hidden="true">+</span></span></summary><div class="program-detail"><p>נתרגל את התנועות המרכזיות ונבנה בסיס שאפשר להתקדם ממנו.</p><a href="#join">נבדוק יחד מה מתאים לי <span aria-hidden="true">←</span></a></div></details><details class="program-card"><summary><span class="program-tag">4 אימונים בשבוע</span><span class="program-name">ארבעה ימים של כוח</span><span class="program-desc">חלוקה לפלג גוף עליון ותחתון.</span><span class="program-more">עוד על הכיוון <span class="program-plus" aria-hidden="true">+</span></span></summary><div class="program-detail"><p>נבדוק יחד אם התדירות מתאימה לניסיון, לשגרה ולהתאוששות שלכם.</p><a href="#join">נבדוק יחד מה מתאים לי <span aria-hidden="true">←</span></a></div></details></div><p class="program-help">לא צריך לבחור לבד. בשביל זה אנחנו מתחילים בשיחה.</p></section></div></section>
+        </div><section class="training-routes program-preview" id="training-directions" aria-labelledby="routes-title">
+  <div class="program-heading">
+    <h3 id="routes-title">תוכנית האימון שלך</h3>
+    <p class="route-note">את הדגשים, התוכנית והתדירות נבחר יחד לפי המטרות והשגרה שלך.</p>
+  </div>
+  <div class="program-grid">
+    <details class="program-card" name="training-directions-choice" open>
+      <summary><span class="program-name">חיזוק הגוף</span><span class="program-tag">2 או 3 אימונים בשבוע</span><span class="program-plus" aria-hidden="true">+</span></summary>
+      <div class="program-detail">
+        <p>אימוני גוף מלא לבניית כוח ושגרה.</p>
+        <p>נתרגל את התנועות המרכזיות ונבנה בסיס שאפשר להתקדם ממנו.</p>
+        <a href="#join">נבדוק יחד מה מתאים לי <span aria-hidden="true">←</span></a>
+      </div>
+    </details>
+    <details class="program-card" name="training-directions-choice">
+      <summary><span class="program-name">דגש ישבן</span><span class="program-tag">2 או 3 אימונים בשבוע</span><span class="program-plus" aria-hidden="true">+</span></summary>
+      <div class="program-detail">
+        <p>חיזוק ופיתוח הישבן כחלק מתוכנית כוח.</p>
+        <p>ניתן לתת לישבן יותר מקום בתוכנית, תוך חיזוק הגוף כולו והתקדמות בעומס.</p>
+        <a href="#join">נבדוק יחד מה מתאים לי <span aria-hidden="true">←</span></a>
+      </div>
+    </details>
+    <details class="program-card" name="training-directions-choice">
+      <summary><span class="program-name">ארבעה ימים של כוח</span><span class="program-tag">4 אימונים בשבוע</span><span class="program-plus" aria-hidden="true">+</span></summary>
+      <div class="program-detail">
+        <p>חלוקה לפלג גוף עליון ותחתון.</p>
+        <p>נבדוק יחד אם התדירות מתאימה לניסיון, לשגרה ולהתאוששות שלך.</p>
+        <a href="#join">נבדוק יחד מה מתאים לי <span aria-hidden="true">←</span></a>
+      </div>
+    </details>
+  </div>
+  <p class="program-help">בשיחת ההיכרות נתאים את התוכנית למטרות שלך.</p>
+</section></div></section>
       
       <section id="services" class="extra-services section" aria-labelledby="services-title"><div class="container"><div class="section-top"><div><h2 id="services-title">שירותים נוספים</h2><p class="services-payment-note">בתשלום נוסף, לפי השירות הנבחר</p></div><p class="services-intro">תוכנית אימון אישית ברכישה חד־פעמית, או מפגש טכניקה בחדר הכושר שלכם כתוספת לליווי. נבחר יחד את המענה שמתאים לכם.</p></div><div class="service-grid"><article class="service-card"><span class="service-tag">רכישה חד־פעמית</span><h3>תוכנית אימון אישית</h3><p>תוכנית לפי המטרות, הניסיון והציוד שלכם, עם כיוון ברור לאימונים בבית או בחדר כושר.</p><p class="service-meta">תוכנית בלבד, ללא ליווי מתמשך<br>למתאמנות ולמתאמנים עם ניסיון בלבד.</p><a class="text-link" href="https://wa.me/972508841460?text=%D7%94%D7%99%D7%99%20%D7%A8%D7%A2%D7%95%D7%AA%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%95%D7%9C%D7%9E%D7%97%D7%99%D7%A8%20%D7%A9%D7%9C%20%D7%91%D7%A0%D7%99%D7%99%D7%AA%20%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20%D7%90%D7%99%D7%9E%D7%95%D7%9F%20%D7%91%D7%AA%D7%A9%D7%9C%D7%95%D7%9D%20%D7%97%D7%93%D6%BE%D7%A4%D7%A2%D7%9E%D7%99" target="_blank" rel="noopener noreferrer">לפרטים על תוכנית אישית<span aria-hidden="true">←</span></a></article><article class="service-card service-visit"><span class="service-tag">תוספת לליווי אונליין · 90 דקות</span><h3>הדרכת טכניקה בחדר הכושר</h3><p>אני מגיעה לחדר הכושר שלכם. נעבור יחד על המכשירים ועל התרגילים בתוכנית, נכוון את המכשירים ונתרגל את הביצוע והטכניקה.</p><p class="service-meta">מפגש אישי בתשלום נוסף ובתיאום מראש</p><a class="text-link" href="https://wa.me/972508841460?text=%D7%94%D7%99%D7%99%20%D7%A8%D7%A2%D7%95%D7%AA%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%95%D7%9C%D7%9E%D7%97%D7%99%D7%A8%20%D7%A9%D7%9C%20%D7%94%D7%93%D7%A8%D7%9B%D7%AA%20%D7%98%D7%9B%D7%A0%D7%99%D7%A7%D7%94%20%D7%91%D7%AA%2090%20%D7%93%D7%A7%D7%95%D7%AA%20%D7%91%D7%97%D7%93%D7%A8%20%D7%94%D7%9B%D7%95%D7%A9%D7%A8%20%D7%A9%D7%9C%D7%99%2C%20%D7%9B%D7%AA%D7%95%D7%A1%D7%A4%D7%AA%20%D7%9C%D7%9C%D7%99%D7%95%D7%95%D7%99" target="_blank" rel="noopener noreferrer">לתיאום הדרכה בחדר הכושר<span aria-hidden="true">←</span></a></article></div><p class="services-note">ההדרכה מתקיימת בחדר הכושר שלכם בלבד, בתיאום לפי המיקום ואפשרות האימון במקום. פרטי השירות והמחיר נמסרים לפני ההזמנה.</p></div></section>
 <section class="studio-section"><div class="container"><details id="studio" class="studio-panel" open><summary id="studio-toggle"><span class="studio-summary-copy"><span class="studio-summary-title">אימון אישי עם מטרה</span><span class="studio-summary-kicker">בסטודיו שלי באזור הכנרת <span class="studio-audience">· לנשים בלבד</span></span></span><span class="studio-summary-action"><span class="studio-action-label">לגלות עוד</span><span class="studio-summary-plus" aria-hidden="true">+</span></span></summary><div class="studio-content"><div class="studio-welcome"><div><h2>זמן שמוקדש לך.</h2><p class="studio-location">אימונים אישיים בסטודיו, ליד הכנרת</p></div><div class="studio-intro"><p>רוצה להוסיף כוח לצד הפילאטיס, לתת יותר דגש לישבן או להרגיש בטוחה יותר בביצוע? נקדיש את האימון למה שחשוב לך, בהתאם לשגרה ולמטרות שלך.</p></div></div><div class="studio-focus-grid"><article class="studio-focus"><h3>דגש על הישבן</h3><p>אימוני כוח ממוקדים לחיזוק ולפיתוח הישבן, עם תשומת לב לביצוע ולהתקדמות.</p></article><article class="studio-focus"><h3>כוח לצד הפילאטיס</h3><p>מקום להוסיף עבודה עם התנגדות ולפתח כוח, כחלק משגרת האימונים שאת אוהבת.</p></article><article class="studio-focus"><h3>טכניקה וביטחון</h3><p>זמן לתרגל את התרגילים, לשאול שאלות ולקבל דגשים אישיים לביצוע.</p></article></div><div class="studio-technique" role="group" aria-labelledby="technique-title">
